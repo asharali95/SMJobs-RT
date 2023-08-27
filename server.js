@@ -5,7 +5,7 @@ const socketio = require("socket.io");
 const cors = require("cors")
 const PORT = process.env.PORT;
 const app = express();
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: 'https://www.seniormanagers.com' }));
 const server = httpServer.createServer(app);
 const io = socketio(server, {
   cors: {
